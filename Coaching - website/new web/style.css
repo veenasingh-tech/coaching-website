@@ -1,0 +1,190 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body{
+  background:#ffffff;
+  color:#222;
+}
+
+.header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:15px 20px;
+  background:#0b5ed7;
+  color:#fff;
+}
+
+.logo{
+  font-size:22px;
+  font-weight:600;
+}
+
+.hero{
+  height:90vh;
+  background:url('image/hero.jpg') center/cover no-repeat;
+  display:flex;
+  align-items:center;
+  padding-top: 1rem;
+  margin-top: 2px;
+}
+
+.hero-content{
+  /*background:rgba(0,0,0,0.55);*/
+  color:#fff;
+  padding:40px;
+  margin-left:60px;
+  max-width:500px;
+  border-radius:10px;
+}
+
+.hero h1{
+  font-size:42px;
+}
+
+.hero p{
+  margin:15px 0 25px;
+}
+
+.btn{
+  background:#0b5ed7;
+  color:#fff;
+  padding:12px 22px;
+  text-decoration:none;
+  border-radius:6px;
+  display:inline-block;
+}
+
+.btn-light{
+  background:#ffffff;
+  color:#0b5ed7;
+}
+
+section{
+  padding:70px 30px;
+  max-width:1100px;
+  margin:auto;
+}
+
+.about{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:40px;
+  align-items:center;
+}
+
+.about img,
+.course img,
+.contact img{
+  width:100%;
+  border-radius:10px;
+}
+
+.courses h2,
+.contact h2{
+  text-align:center;
+  margin-bottom:40px;
+  color:#0b5ed7;
+}
+
+.course-cards{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:30px;
+}
+
+.course{
+  box-shadow:0 10px 25px rgba(0,0,0,0.1);
+  padding:20px;
+  border-radius:10px;
+  text-align:center;
+}
+
+.why{
+  background:#f5f8ff;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.why h2{
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.why-boxes{
+  display:flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.why-boxes div{
+  background:#fff;
+  padding:20px;
+  border-radius:8px;
+  text-align:center;
+  box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+.Batches,
+.Sessions,
+.Faculty,
+.Test{
+  flex: 1 1 300px;
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.Batches:hover,
+.Sessions:hover,
+.Faculty:hover,
+.Tests:hover{
+ transform: translateY(-5px);
+}
+
+.Batches img,
+.Sessions img,
+.Faculty img,
+.Tests img {
+  width: 100%;
+  max-width: 150px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.Batches div,
+.Sessions div,
+.Faculty div,
+.Tests div {
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+.contact-box{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:30px;
+  align-items:center;
+}
+
+.footer{
+  text-align:center;
+  padding:20px;
+  background:#f1f1f1;
+}
+
+@media(max-width:768px){
+  .about,.contact-box{
+    grid-template-columns:1fr;
+  }
+  .hero-content{
+    margin:20px;
+  }
+}
